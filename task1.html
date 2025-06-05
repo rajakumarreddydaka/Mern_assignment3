@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor appointment form</title>
+    <style>
+         input{
+            margin-top: 10px;
+         }
+         h1{
+            text-align: center;
+         }
+         textarea{
+            padding: 30px;
+            width :300px;
+            margin-top: 10px;
+         }
+        form{
+         margin-left: 25%;
+        }
+    </style>
+</head>
+<body>
+   
+        <h1>Doctor Appointment Form</h1>
+        <hr style="height: 2px; background-color: red; border: none;">
+    <form>
+        <label for="appointmentdate">Appointment Date</label>
+        <input style="margin-left: 40px;" type="date" id ="appointmentdate" name ="appointmentdate">
+        <br> 
+        <label for="appointmenttime">Appointment Time</label>
+        <input style="margin-left: 38px;"type="time" id ="appointmenttime" name ="appointmenttime">
+        <br>
+        <label for="name">Name </label>
+        <input style="margin-left: 120px;" type="text" id ="name" name ="name" placeholder="First">
+        <input style="margin-left: 40px;"type="text" id ="name" name ="name" placeholder="last">
+        <br>
+        <label for ="gender">Gender</label>
+        <input style="margin-left: 110px;"type="radio" id ="gender" name ="gender" value="Male">Male
+        <input type="radio" id ="gender" name ="gender" value="Female">Female
+        <br>
+        <label for ="phone">Phone</label>
+        <input style="margin-left: 116px;"type="phone" id="phone" name="phone" placeholder="123-456-7890">
+        <br>
+        <label for ="Address">Address</label>
+        <input style="margin-left: 105px;"type ="text" id ="Address" name ="Address" placeholder="city">
+        <input style="margin-left: 40px;"type="text" id ="Address" name ="Address" placeholder="State">
+        <br>
+        <label for ="query" style="margin-top: 88px;">Your Query</label>
+       <textarea style ="margin-left: 80px ;"></textarea>
+       <br>
+       <label for ="Appointmenttype">Appointment Type &nbsp&nbsp &nbsp&nbsp&nbsp   Select which appointment(s)  type you require</label>
+       <br>
+       <input style="margin-left: 150px;" type="checkbox" id ="Appointmenttype" name="Appointmenttype" value="cervix checkup">cervix checkup<br>
+       <input style="margin-left: 150px;" type="checkbox" id ="Appointmenttype" name="Appointmenttype" value="heart checkup">heart checkup<br>
+       <input style="margin-left: 150px;" type="checkbox" id ="Appointmenttype" name="Appointmenttype" value="eye checkup">eye checkup<br>
+       <input style="margin-left: 150px;" type="checkbox" id ="Appointmenttype" name="Appointmenttype" value="hearing test">Hearing test<br>
+      <button style="margin-left:150px;">Send</button>
+    </form>
+</body>
+</html>
